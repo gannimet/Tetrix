@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, TetroidActivity!</string>
+    <string name="app_name">Tetrix</string>
+    <string name="tetrix">Tetrix</string>
+    <string name="tetroid_capital">TETROID</string>
+    <string name="play">Spielen</string>
+    <string name="settings">Einstellungen</string>
+    <string name="help">Hilfe</string>
+    <string name="points">Punkte</string>
+    <string name="level">Level</string>
+    <string name="lines">Reihen</string>
+    <string name="left">links</string>
+    <string name="right">rechts</string>
+    <string name="down">nach unten</string>
+    <string name="rotate">rotieren</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Weiter</string>
+    <string name="stone_colors">Farben der Steine</string>
+    <string-array name="stone_color_options">
+        <item>Tetris-Standard</item>
+        <item>Einfarbig</item>
+        <item>Zufällige Farben</item>
+    </string-array>
+    <string-array name="stone_color_values">
+        <item>standard</item>
+        <item>single</item>
+        <item>shuffle</item>
+    </string-array>
+    <string-array name="stone_type_options">
+        <item>L</item>
+        <item>J</item>
+        <item>I</item>
+        <item>O</item>
+        <item>T</item>
+        <item>S</item>
+        <item>Z</item>
+        <item>Einzel</item>
+    </string-array>
+    <string-array name="stone_type_values">
+        <item>straight_l</item>
+        <item>inversed_l</item>
+        <item>four_bar</item>
+        <item>block</item>
+        <item>podium</item>
+        <item>right_chair</item>
+        <item>left_chair</item>
+        <item>single</item>
+    </string-array>
+    <string name="stone_types">Steintypen</string>
+    <string name="stone_colors_summary">Wie Steine gefärbt sein sollen</string>
+    <string name="stone_types_summary">Welche Steine im Spiel vorkommen sollen</string>
+    <string name="next_stone_preview">Nächsten Stein anzeigen</string>
+    <string name="next_stone_summary">Zeigen, welcher Stein als nächster kommt (kann die Punktzahl beeinflussen!)</string>
+    <string name="game_settings">Spieleinstellungen</string>
+    <string name="control_settings">Steuerungseinstellungen</string>
+    <string name="panel_tap">Tippen auf das Spielfeld …</string>
+    <string name="panel_tap_summary">Ob bei Berührung des Spielfelds pausiert, der Stein rotiert oder in Richtung der Berührung bewegt werden soll</string>
+	<string-array name="panel_tap_options">
+        <item>… bewegt den Stein nach links oder rechts</item>
+        <item>… rotiert den Stein</item>
+        <item>… pausiert das Spiel</item>
+        <item>… hat keinen Effekt</item>
+    </string-array>
+    <string-array name="panel_tap_values">
+        <item>move_on_tap</item>
+        <item>rotate_on_tap</item>
+        <item>pause_on_tap</item>
+        <item>nothing_on_tap</item>
+    </string-array>
+    <string name="missing_image">Bild konnte nicht geladen werden</string>
+    <string name="save">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="choose_stone_color">Steinfarbe wählen</string>
+    <string name="choose_stone_color_summary">Wird als Steinfarbe genutzt, falls die Option \'Einfarbig\' ausgewählt wurde</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="next">Nächster</string>
+    <string name="stone_color_strategy_default">standard</string>
+    <string name="stone_types_default">four_bar,straight_l,inversed_l,block,podium,left_chair,right_chair</string>
+    <string name="not_enough_types_selected_warning">Es müssen mindestens drei Steintypen ausgewählt werden.</string>
+    <string name="panel_tap_default">nothing_on_tap</string>
+</resources>

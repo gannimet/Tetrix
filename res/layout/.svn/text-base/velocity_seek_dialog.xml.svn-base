@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+    
+    <!-- TODO: Rewrite as linear layout -->
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    
+	    <TextView
+	        android:id="@+id/slowText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignBaseline="@+id/valueText"
+	        android:gravity="left"
+	        android:text="@string/slow" />
+	    
+	    <TextView
+	        android:id="@+id/fastText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="right"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignBaseline="@id/valueText"
+	        android:text="@string/fast" />
+	    
+	    <TextView
+	        android:id="@id/valueText"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:text="@string/zero"
+	        android:textSize="30dp" />
+    
+    </RelativeLayout>
+    
+    <SeekBar
+        android:id="@+id/velocity_seek_bar"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp" />
+
+</LinearLayout>

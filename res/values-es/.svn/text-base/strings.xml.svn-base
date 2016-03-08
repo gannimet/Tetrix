@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, TetroidActivity!</string>
+	<string name="app_name">Tetrix</string>
+	<string name="tetrix">Tetrix</string>
+	<string name="tetroid_capital">TETROID</string>
+	<string name="play">Jugar</string>
+	<string name="settings">Configuración</string>
+	<string name="help">Ayuda</string>
+	<string name="points">Puntos</string>
+	<string name="level">Nivel</string>
+	<string name="lines">Líneas</string>
+	<string name="left">izquierda</string>
+	<string name="right">derecha</string>
+	<string name="down">hacia abajo</string>
+	<string name="rotate">rotar</string>
+	<string name="pause">pausa</string>
+	<string name="resume">continuar</string>
+	<string name="stone_colors">Colores de Piedra</string>
+	<string name="stone_types">Tipos de Piedras</string>
+	<string name="stone_colors_summary">elige el color en el que serán pintadas las piedras</string>
+	<string name="stone_types_summary">tipos de piedras deseadas para jugar el juego</string>
+	<string name="next_stone_preview">Obtener Vista Previa de Piedras Siguientes</string>
+	<string name="next_stone_summary">muestra una vista previa de las piedras que siguen (¡Podría afectar su puntuación!)</string>
+	<string name="game_settings">Configuración del Juego</string>
+	<string name="control_settings">Ajustes de Control</string>
+	<string name="panel_tap">Tocando el Panel del Juego…</string>
+	<string name="panel_tap_summary">define lo que le sucede al tocar el panel</string>
+	<string name="missing_image">la imagen no se pudo cargar</string>
+	<string name="save">Salvar</string>
+	<string name="cancel">Cancelar</string>
+	<string name="choose_stone_color">Escoger el color de piedra</string>
+	<string name="choose_stone_color_summary">permite la selección de un solo color para la piedras si la opción de piedras a \'un solo color\' ha sido elegida</string>
+	<string name="zero">0</string>
+	<string name="one">1</string>
+	<string name="next">Próximo</string>
+	<string name="not_enough_types_selected_warning">Debe haber al menos 3 diferentes piedras seleccionadas.</string>
+	<string name="swap_lower_buttons">Cambiar Formato de Botones Direccionales</string>
+	<string name="swap_lower_buttons_summary">si se selecciona, el botón que gira la piedra aparecerá al lado izquierdo del panel, y el botón que mueve la piedra hacia abajo aparecerá al lado derecho.</string>
+	<string name="hold_control_buttons">Opción de Oprimir Botones</string>
+	<string name="hold_control_buttons_summary">Define cuales botones usted desea \'oprimir\' al fin de poder controlar el movimiento de las piedras.</string>
+	<string name="slow">lento</string>
+	<string name="fast">rápido</string>
+	<string name="stone_velocity">Velocidad de la Piedra</string>
+	<string name="stone_velocity_summary">Determina la velocidad en el cual la piedra cae cuando los botones direccionales son oprimidos</string>
+	<string name="general_settings">Configuración General</string>
+	<string name="language">Lenguaje</string>
+	<string-array name="stone_color_options">
+	    <item>Colores estándar de tetris</item>
+	    <item>Un solo Color</item>
+	    <item>Barajar Colores</item>
+	</string-array>
+	<string-array name="stone_type_options">
+	    <item>L</item>
+        <item>J</item>
+        <item>I</item>
+        <item>O</item>
+        <item>T</item>
+        <item>S</item>
+        <item>Z</item>
+	    <item>Cuadro</item>
+	</string-array>
+	<string-array name="hold_control_buttons_options">
+	    <item>Nada</item>
+	    <item>Solamente el botón que maneja la piedra hacia abajo</item>
+	    <item>Solamente el botón que mueve la piedra de lado a lado</item>
+	    <item>Todo los botones que manejan la piedra</item>
+	</string-array>
+	<string-array name="panel_tap_options">
+	    <item>… mueve la piedra hacia la izquierda o derecha</item>
+	    <item>… gira la piedra</item>
+	    <item>… pausa el juego</item>
+	    <item>… no hace nada</item>
+	</string-array>
+	<string name="language_summary">El idioma que usted desea utilizar para esta aplicación</string>
+	<string name="faq_explain">Abajo se encuentra una lista de preguntas frecuentes. Favor de en enviar un correo electrónico a tetrixapp@gmail.com si no encuentra su pregunta enumerada a continuación.</string>
+</resources>

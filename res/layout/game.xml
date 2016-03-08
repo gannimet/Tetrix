@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gamePanelBackground"
+    android:gravity="center_horizontal" >
+
+    <!-- AdView on top -->
+	
+    <com.google.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="a150167e07b59c5"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR, HT0BPPL02823" />
+    
+    <!-- End of AdView -->
+
+
+    <!-- Begin of lower button row (move down, pause, rotate) -->
+
+    <ImageButton
+        android:id="@+id/lowerLeftBtn"
+        style="@style/GameButton"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:contentDescription="@string/down"
+        android:src="@drawable/down" />
+
+    <ImageButton
+        android:id="@+id/lowerRightBtn"
+        style="@style/GameButton"
+        android:layout_width="100dp"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="@string/rotate"
+        android:src="@drawable/rotate_clockwise" />
+
+    <ImageButton
+        android:id="@+id/pauseBtn"
+        style="@style/GameButton"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@id/lowerRightBtn"
+        android:layout_toRightOf="@id/lowerLeftBtn"
+        android:contentDescription="@string/pause"
+        android:src="@drawable/pause" />
+
+    <!-- End of lower button row -->
+
+
+    <!-- Begin left panel (points and level labels) -->
+
+	<ImageButton
+        android:id="@+id/moveLeftBtn"
+        style="@style/GameButton"
+        android:layout_width="70dp"
+        android:layout_height="200dp"
+        android:layout_above="@id/lowerLeftBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/left"
+        android:src="@drawable/left" />
+
+    <TextView
+        android:id="@+id/pointsDescLbl"
+        style="@style/PlainBlack"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+    	android:layout_below="@id/adView"
+        android:text="@string/points" />
+
+    <TextView
+        android:id="@+id/pointsLbl"
+        style="@style/PlainBlack"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/pointsDescLbl"
+        android:layout_below="@id/pointsDescLbl"
+        android:text="@string/zero" />
+
+    <TextView
+        android:id="@+id/levelDescLbl"
+        style="@style/PlainBlack"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/pointsLbl"
+        android:layout_below="@id/pointsLbl"
+        android:layout_marginTop="30dp"
+        android:text="@string/level" />
+
+    <TextView
+        android:id="@+id/levelLbl"
+        style="@style/PlainBlack"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/levelDescLbl"
+        android:layout_below="@id/levelDescLbl"
+        android:text="@string/one" />
+
+    <!-- End of left panel -->
+
+
+    <!-- Begin right panel (next stone and lines) -->
+
+	<ImageButton
+        android:id="@+id/moveRightBtn"
+        style="@style/GameButton"
+        android:layout_width="70dp"
+        android:layout_height="200dp"
+        android:layout_above="@id/lowerRightBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/right"
+        android:src="@drawable/right" />
+
+    <TextView
+        android:id="@+id/nextDescLbl"
+        style="@style/PlainBlack"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/adView"
+        android:text="@string/next" />
+
+    <de.riwo.tetrix.StonePreview
+        android:id="@+id/nextLbl"
+		android:gravity="center_horizontal|center_vertical"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignRight="@id/nextDescLbl"
+        android:layout_below="@id/nextDescLbl" />
+
+    <TextView
+        android:id="@+id/linesDescLbl"
+        style="@style/PlainBlack"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/nextLbl"
+        android:layout_below="@id/nextLbl"
+        android:layout_marginTop="10dp"
+        android:text="@string/lines" />
+
+    <TextView
+        android:id="@+id/linesLbl"
+        style="@style/PlainBlack"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/linesDescLbl"
+        android:layout_below="@id/linesDescLbl"
+        android:text="@string/zero" />
+
+    <!-- End of right panel -->
+
+
+    <!-- Central game panel -->
+
+    <de.riwo.tetrix.GridPanel
+        android:id="@+id/gridCanvas"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/pauseBtn"
+        android:layout_below="@id/adView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@id/nextDescLbl"
+        android:layout_toRightOf="@id/pointsDescLbl" />
+
+    <!-- End of game panel -->
+
+</RelativeLayout>

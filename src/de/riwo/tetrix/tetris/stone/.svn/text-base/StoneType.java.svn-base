@@ -1,0 +1,8 @@
+package de.riwo.tetrix.tetris.stone;
+
+public enum StoneType {
+
+	BLOCK_STONE, STRAIGHT_L_STONE, INVERSED_L_STONE, LEFT_CHAIR_STONE,
+	RIGHT_CHAIR_STONE, FOUR_BAR_STONE, SINGLE_STONE, PODIUM_STONE
+	
+}

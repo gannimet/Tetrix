@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="stone_type_images">
+        <item>@drawable/straight_l</item>
+        <item>@drawable/inversed_l</item>
+        <item>@drawable/four_bar</item>
+        <item>@drawable/block</item>
+        <item>@drawable/podium</item>
+        <item>@drawable/right_chair</item>
+        <item>@drawable/left_chair</item>
+        <item>@drawable/single</item>
+    </array>
+</resources>

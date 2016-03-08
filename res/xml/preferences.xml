@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tetrix="http://schemas.android.com/apk/res/de.riwo.tetrix"
+    android:title="@string/settings">
+    
+    <!-- 
+    <PreferenceScreen android:title="@string/general_settings">
+        
+        <ListPreference
+            android:key="language"
+            android:entries="@array/language_options"
+            android:entryValues="@array/language_values"
+            android:title="@string/language"
+            android:summary="@string/language_summary"
+            android:defaultValue="@string/language_default" />
+        
+    </PreferenceScreen>
+     -->
+    
+    <PreferenceScreen
+        android:title="@string/game_settings">
+    
+	    <ListPreference
+	        android:entries="@array/stone_color_options"
+	        android:entryValues="@array/stone_color_values"
+	        android:title="@string/stone_colors"
+	        android:key="stone_colors"
+	        android:summary="@string/stone_colors_summary"
+	        android:defaultValue="@string/stone_color_strategy_default" />
+	    
+	    <de.riwo.tetrix.yuku.ambilwarna.widget.AmbilWarnaPreference
+	        android:key="single_color_choice"
+            android:defaultValue="@color/stone_color_default" 
+            android:title="@string/choose_stone_color"
+            android:summary="@string/choose_stone_color_summary" />
+	    
+	    <de.riwo.tetrix.ListPreferenceMultiSelect
+	        android:key="stone_types"
+	        android:entries="@array/stone_type_options"
+	        android:entryValues="@array/stone_type_values"
+	        android:title="@string/stone_types"
+	        android:summary="@string/stone_types_summary"
+	        tetrix:entryImages="@array/stone_type_images"
+	        tetrix:separator=","
+	        android:defaultValue="@string/stone_types_default" />
+	    
+	    <CheckBoxPreference
+	        android:key="next_stone"
+	        android:defaultValue="true"
+	        android:title="@string/next_stone_preview"
+	        android:summary="@string/next_stone_summary" />
+	    
+	    <CheckBoxPreference
+	        android:key="four_line_hint"
+	        android:defaultValue="false"
+	        android:title="@string/four_line_hint"
+	        android:summary="@string/four_line_hint_summary" />
+    
+    </PreferenceScreen>
+    
+    <PreferenceScreen
+        android:title="@string/control_settings">
+        
+        <ListPreference
+            android:key="panel_tap"
+            android:entries="@array/panel_tap_options"
+            android:entryValues="@array/panel_tap_values"
+            android:title="@string/panel_tap"
+            android:summary="@string/panel_tap_summary"
+            android:defaultValue="@string/panel_tap_default" />
+        
+        <CheckBoxPreference
+            android:key="swap_lower_buttons"
+            android:defaultValue="false"
+            android:title="@string/swap_lower_buttons"
+            android:summary="@string/swap_lower_buttons_summary" />
+        
+        <ListPreference
+            android:key="hold_control_buttons"
+            android:entries="@array/hold_control_buttons_options"
+            android:entryValues="@array/hold_control_buttons_values"
+            android:defaultValue="@string/hold_control_buttons_default"
+            android:title="@string/hold_control_buttons"
+            android:summary="@string/hold_control_buttons_summary" />
+        
+        <de.riwo.tetrix.SeekBarPreference
+            android:key="stone_velocity"
+            android:title="@string/stone_velocity"
+            android:summary="@string/stone_velocity_summary"
+            android:defaultValue="50" />
+        
+    </PreferenceScreen>
+
+</PreferenceScreen>

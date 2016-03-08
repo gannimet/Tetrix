@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titleScreenBackground">#222</color>
+    <color name="titleScreenForeground">#222</color>
+    <color name="white">#fff</color>
+    <color name="gamePanelBackground">#ddd</color>
+    <color name="grey">#ccc</color>
+    <color name="black">#000</color>
+    <color name="smooth_button">#FAD12F</color>
+    <color name="smooth_button_pressed">#43CC1D</color>
+    <color name="stone_color_default">#888888</color>
+    <color name="multi_select_pressed">#90DCFC</color>
+</resources>

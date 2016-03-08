@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Hello World, TetroidActivity!</string>
+    <string name="app_name">Tetrix</string>
+    <string name="tetrix">Tetrix</string>
+    <string name="tetroid_capital">TETROID</string>
+    <string name="play">Play</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+    <string name="points">Points</string>
+    <string name="level">Level</string>
+    <string name="lines">Lines</string>
+    <string name="left">left</string>
+    <string name="right">right</string>
+    <string name="down">down</string>
+    <string name="rotate">rotate</string>
+    <string name="pause">pause</string>
+    <string name="resume">resume</string>
+    <string name="stone_colors">Stone colors</string>
+    <string-array name="stone_color_options">
+        <item>Tetris standard</item>
+        <item>Single colored</item>
+        <item>Shuffle colors</item>
+    </string-array>
+    <string-array name="stone_color_values">
+        <item>standard</item>
+        <item>single</item>
+        <item>shuffle</item>
+    </string-array>
+    <string-array name="stone_type_options">
+        <item>Straight L</item>
+        <item>Inversed L</item>
+        <item>Four bar</item>
+        <item>Block</item>
+        <item>Podium</item>
+        <item>Right chair</item>
+        <item>Left chair</item>
+        <item>Single</item>
+    </string-array>
+    <string-array name="stone_type_values">
+        <item>straight_l</item>
+        <item>inversed_l</item>
+        <item>four_bar</item>
+        <item>block</item>
+        <item>podium</item>
+        <item>right_chair</item>
+        <item>left_chair</item>
+        <item>single</item>
+    </string-array>
+    <string-array name="hold_control_buttons_options">
+        <item>None</item>
+        <item>\'Move down\' button only</item>
+        <item>\'Left\' and \'right\' button only</item>
+        <item>All move buttons</item>
+    </string-array>
+    <string-array name="hold_control_buttons_values">
+        <item>none</item>
+        <item>only_down</item>
+        <item>only_left_right</item>
+        <item>all</item>
+    </string-array>
+    <string name="hold_control_buttons_default">only_down</string>
+    <string name="stone_types">Stone types</string>
+    <string name="stone_colors_summary">How stones should be colored</string>
+    <string name="stone_types_summary">Which stones should be used for the game</string>
+    <string name="next_stone_preview">Preview next stone</string>
+    <string name="next_stone_summary">Show which stone comes next (might affect your scoring!)</string>
+    <string name="game_settings">Game settings</string>
+    <string name="control_settings">Control settings</string>
+    <string name="panel_tap">Tapping on game panel …</string>
+    <string name="panel_tap_summary">Whether tapping on the game panel rotates or moves the stone in the direction in which you tap</string>
+	<string-array name="panel_tap_options">
+        <item>… moves the stone left or right</item>
+        <item>… rotates the stone</item>
+        <item>… pauses the game</item>
+        <item>… does nothing</item>
+    </string-array>
+    <string-array name="panel_tap_values">
+        <item>move_on_tap</item>
+        <item>rotate_on_tap</item>
+        <item>pause_on_tap</item>
+        <item>nothing_on_tap</item>
+    </string-array>
+    <string name="missing_image">Image could not be loaded</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_stone_color">Choose stone color</string>
+    <string name="choose_stone_color_summary">Used as the single color for stones in case you selected \'single colored\'</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="next">Next</string>
+    <string name="stone_color_strategy_default">standard</string>
+    <string name="stone_types_default">four_bar,straight_l,inversed_l,block,podium,left_chair,right_chair</string>
+    <string name="not_enough_types_selected_warning">At least 3 stone types have to be selected.</string>
+    <string name="panel_tap_default">nothing_on_tap</string>
+    <string name="swap_lower_buttons">Swap control buttons</string>
+    <string name="swap_lower_buttons_summary">If checked, the rotate button will appear on the left, the down button on the right</string>
+    <string name="hold_control_buttons">Hold down control buttons</string>
+    <string name="hold_control_buttons_summary">Define which buttons you want to be able to \'hold down\' in order to control the movement of a stone</string>
+    <string name="slow">slow</string>
+    <string name="fast">fast</string>
+    <string name="stone_velocity">Drop speed</string>
+    <string name="stone_velocity_summary">How fast stones should move down or to the side when holding down a control button</string>
+    <string name="general_settings">General settings</string>
+    <string name="language">Language</string>
+    <string-array name="language_options">
+        <item>English</item>
+        <item>Deutsch</item>
+        <item>Español</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>en</item>
+        <item>de</item>
+        <item>es</item>
+    </string-array>
+    <string name="language_default">en</string>
+    <string name="language_summary">In which language you wanna use the app</string>
+    <string name="faq_explain">Below is a list of frequently asked questions. If you don\'t find your question listed here, feel free to write me an e-mail to tetrixapp@gmail.com.</string>
+</resources>
